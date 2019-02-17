@@ -19,37 +19,28 @@ public class Division {
         weapons = new ArrayList<>(numberOfMilitary);
     }
 
-    private ArrayList<MilitaryFirearms> GetListOfFireArms() {
+    private <T extends AbstractWeapon> ArrayList<T> GetListOfWeapons(Type listType, String filename)  {
         Gson gson = new Gson();
         StringBuilder wJson = new StringBuilder();
         try {
-            Files.lines(Paths.get("firearms.json"), StandardCharsets.UTF_8).forEach(s -> wJson.append(s));
+            Files.lines(Paths.get(filename), StandardCharsets.UTF_8).forEach(wJson::append);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+        return gson.fromJson(wJson.toString(), listType);
+    }
+
+    void EquipWithWeapons() {
         Type listType  = new TypeToken<ArrayList<MilitaryFirearms>>(){}.getType();
-        return gson.fromJson(wJson.toString(), listType);
-    }
-
-    private ArrayList<ColdSteelArms> GetListOfColdArms() {
-        Gson gson = new Gson();
-        StringBuilder wJson = new StringBuilder();
-        try {
-            Files.lines(Paths.get("coldarms.json"), StandardCharsets.UTF_8).forEach(s -> wJson.append(s));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        Type listType  = new TypeToken<ArrayList<ColdSteelArms>>(){}.getType();
-        return gson.fromJson(wJson.toString(), listType);
-    }
-
-
-
-    public void EquipWithWeapons() {
-        ArrayList<MilitaryFirearms> listOfFireArms = GetListOfFireArms();
-        ArrayList<ColdSteelArms> listOfColdArms = GetListOfColdArms();
+        ArrayList<MilitaryFirearms> listOfFireArms = GetListOfWeapons(
+            new TypeToken<ArrayList<MilitaryFirearms>>(){}.getType(),
+            "firearms.json"
+        );
+        ArrayList<ColdSteelArms> listOfColdArms = GetListOfWeapons(
+            new TypeToken<ArrayList<ColdSteelArms>>(){}.getType(),
+            "coldarms.json"
+        );
 
         int milWithFireArms = ThreadLocalRandom.current().nextInt(0, numberOfMilitary);
         for(int i = 0; i < milWithFireArms; i++) {
