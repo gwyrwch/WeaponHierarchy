@@ -1,0 +1,18 @@
+[
+  {
+    "bladeLength": 122,
+    "bladeMaterial": "steel",
+    "name": "throwing knife",
+    "weight": 0.2,
+    "price": 100,
+    "serialNumber": 876278
+  },
+  {
+    "bladeLength": 400,
+    "bladeMaterial": "steel",
+    "name": "survival knife",
+    "weight": 0.54,
+    "price": 150,
+    "serialNumber": 907632
+  }
+]

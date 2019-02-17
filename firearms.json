@@ -1,0 +1,54 @@
+[
+  {
+    "country": "Belarus",
+    "model": "MP-445",
+    "capacity": 17,
+    "rateOfFire": 20,
+    "sightingRange": 50,
+    "muzzleVelocity": 128,
+    "numberOfCartridges": 17,
+    "name": "pistol",
+    "weight": 0.9,
+    "price": 1000,
+    "serialNumber": 123213
+  },
+  {
+    "country": "Belarus",
+    "model": "OC-02 Cypress",
+    "capacity": 30,
+    "rateOfFire": 40,
+    "sightingRange": 75,
+    "muzzleVelocity": 320,
+    "numberOfCartridges": 30,
+    "name": "tommy-gun",
+    "weight": 1.6,
+    "price": 4000,
+    "serialNumber": 324536
+  },
+  {
+    "country": "Belarus",
+    "model": "PKMB Kalashnikov",
+    "capacity": 250,
+    "rateOfFire": 650,
+    "sightingRange": 1500,
+    "muzzleVelocity": 825,
+    "numberOfCartridges": 250,
+    "name": "machine gun",
+    "weight": 17.5,
+    "price": 3000,
+    "serialNumber": 123569
+  },
+  {
+    "country": "Belarus",
+    "model": "CP.3 Vikhr",
+    "capacity": 20,
+    "rateOfFire": 900,
+    "sightingRange": 200,
+    "muzzleVelocity": 290,
+    "numberOfCartridges": 20,
+    "name": "assault rifle",
+    "weight": 2.0,
+    "price": 2500,
+    "serialNumber": 456783
+  }
+]
