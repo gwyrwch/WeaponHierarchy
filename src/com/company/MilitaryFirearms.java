@@ -29,4 +29,9 @@ public class MilitaryFirearms extends Gun {
                 "Model: " + model
             );
     }
+
+    @Override
+    public void UseWeapon() {
+        System.out.println(this.GetName() + " used");
+    }
 }

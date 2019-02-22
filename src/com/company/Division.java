@@ -54,7 +54,6 @@ public class Division {
             weapons.add((listOfColdArms.get(index)));
         }
 
-        //TODO: read from file weapons and randomly equip each person
     }
 
     public int CountCost() {
