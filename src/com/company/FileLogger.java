@@ -5,7 +5,7 @@ import java.io.FileOutputStream;
 import java.io.PrintStream;
 
 public class FileLogger implements ILogger {
-    FileLogger() {
+    public FileLogger() {
         try {
             out = new PrintStream(new FileOutputStream("log.txt", true), true);
         } catch (FileNotFoundException exception) {

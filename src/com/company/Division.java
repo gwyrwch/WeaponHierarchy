@@ -23,7 +23,10 @@ public class Division {
             weapons.add(factories[type].factoryMethod());
         }
 
-        LoggerFactory.CreaterLogger(Settings.LoggerType).Log("Division successfully equipped from method Division.EquipWithWeapons");
+        LoggerFactory.CreaterLogger(
+                Settings.LoggerType).Log(
+                        "Division successfully equipped from method Division.EquipWithWeapons"
+        );
     }
 
     public int CountCost() {
