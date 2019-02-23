@@ -1,0 +1,18 @@
+Program successfully started
+Division successfully equipped from method Division.EquipWithWeapons
+Counting cost from method Division.CountCost
+...
+Division.CountCost: Cost is 34250
+Program successfully finished
+Program successfully started
+Division successfully equipped from method Division.EquipWithWeapons
+Counting cost from method Division.CountCost
+...
+Division.CountCost: Cost is 13050
+Program successfully finished
+Program successfully started
+Division successfully equipped from method Division.EquipWithWeapons
+Counting cost from method Division.CountCost
+...
+Division.CountCost: Cost is 250
+Program successfully finished
