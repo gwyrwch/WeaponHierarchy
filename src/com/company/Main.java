@@ -1,14 +1,17 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        //Scanner in = new Scanner(System.in);
-        // int num = in.nextInt();
         LoggerFactory.CreaterLogger(Settings.LoggerType).Log("Program successfully started");
+        System.out.println("Enter the number of military: 12");
+        Scanner in = new Scanner(System.in);
+        int numOfMilitary = in.nextInt();
 
-        Division d = new Division(20);
+        Division d = new Division(numOfMilitary);
         d.EquipWithWeapons();
         System.out.println(d.CountCost());
 
