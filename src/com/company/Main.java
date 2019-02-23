@@ -6,6 +6,7 @@ public class Main {
 
         //Scanner in = new Scanner(System.in);
         // int num = in.nextInt();
+        LoggerFactory.CreaterLogger(Settings.LoggerType).Log("Program successfully started");
 
         Division d = new Division(20);
         d.EquipWithWeapons();
@@ -13,9 +14,7 @@ public class Main {
 
         System.out.println(d.ShowInformation());
 
-
-
-
+        LoggerFactory.CreaterLogger(Settings.LoggerType).Log("Program successfully finished");
     }
 
 
